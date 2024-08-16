@@ -81,6 +81,7 @@ Add the following code to `create` function
 // Create the UpdateActions Object to return it to the client
 const updateAction: UpdateAction = {
   action: "setCustomerNumber",
+  // generate a number between 1000 and 1899
   customerNumber: String(Math.floor(1000 + Math.random() * 900)),
 };
 
@@ -234,12 +235,17 @@ Since every application is running on port 8080, we should stop this server befo
 
 Now that you have locally tested your connect applications successfully, it is time to deploy them onto your `Composable Commerce` project. For that please commit your changes and push them to your GitHub repo.
 
-Once you have updated the GitHub repo for your project, create a release tag such as `v0.0.1` and provide the following values in the Postman Collection Variables section before using the Postman collection to deploy your connector.
+Once you have updated the GitHub repo for your project, create a release tag such as `v0.0.1` and provide the following values in the **Postman Collection Variables** section before using the Postman collection to deploy your connector.
 
-| Variable Name        | Current Value                          |
-| -------------------- | -------------------------------------- |
-| repo-url             | https://github.com/....                |
-| repo-tag             | v0.0.1                                 |
-| connector-staged-key | &lt;unique key for your connector&gt;  |
-| creator-email        | &lt;your email address&gt;             |
-| deployement-key      | &lt;unique key for your deployment&gt; |
+| Variable Name        | Current Value                                    |
+| -------------------- | ------------------------------------------------ |
+| connector-name       | &lt;a name containing your initials&gt;          |
+| connector-staged-key | &lt;unique key for your connector&gt;            |
+| repo-url             | HTTPS or SSH GitHub URL of the GitHub repository |
+| repo-tag             | v0.0.1                                           |
+| creator-email        | &lt;your email address&gt;                       |
+| deployement-key      | &lt;unique key for your deployment&gt;           |
+
+## Clean Up
+
+Once you have tested your installation, it is time to undeploy the installation. Please run the scripts in the **Clean Up** section of your Postman Collection.
