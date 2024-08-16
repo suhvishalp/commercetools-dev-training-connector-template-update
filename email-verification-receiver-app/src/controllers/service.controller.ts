@@ -34,7 +34,7 @@ export const post = async (request: Request, response: Response) => {
     if (isHttpError(error)) {
       throw new CustomError(error.code, error.message, error.body?.errors);
     } else {
-      throw new CustomError('Internal Server Error', 'Unable to verify token');
+      throw new CustomError(500, 'Internal Server Error');
     }
   }
 };
