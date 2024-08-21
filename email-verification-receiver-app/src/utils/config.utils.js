@@ -18,7 +18,7 @@ const readConfiguration = () => {
         clientId: process.env.CTP_CLIENT_ID,
         clientSecret: process.env.CTP_CLIENT_SECRET,
         projectKey: process.env.CTP_PROJECT_KEY,
-        scope: process.env.CTP_SCOPE,
+        scope: process.env.CTP_SCOPES,
         region: process.env.CTP_REGION,
     };
     const validationErrors = (0, helpers_validators_1.getValidateMessages)(env_validators_1.default, envVars);

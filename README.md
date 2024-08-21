@@ -37,7 +37,7 @@ CTP_REGION
 CTP_PROJECT_KEY
 CTP_CLIENT_ID
 CTP_CLIENT_SECRET
-CTP_SCOPE
+CTP_SCOPES
 ```
 
 ### 2. Email Verification Sender App
@@ -47,7 +47,7 @@ CTP_REGION
 CTP_PROJECT_KEY
 CTP_CLIENT_ID
 CTP_CLIENT_SECRET
-CTP_SCOPE
+CTP_SCOPES
 ```
 
 ### 3. Email Verification Receiver App
@@ -57,7 +57,7 @@ CTP_REGION
 CTP_PROJECT_KEY
 CTP_CLIENT_ID
 CTP_CLIENT_SECRET
-CTP_SCOPE
+CTP_SCOPES
 ```
 
 ## Getting Started
@@ -110,7 +110,7 @@ Copy those values into your `.env` file. So at the end, your `.env` file should 
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
-CTP_SCOPE=
+CTP_SCOPES=
 CTP_REGION=europe-west1.gcp
 ```
 
@@ -160,7 +160,7 @@ Copy those values into your `.env` file. So at the end, your `.env` file should 
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
-CTP_SCOPE=
+CTP_SCOPES=
 CTP_REGION=europe-west1.gcp
 ```
 
@@ -211,7 +211,7 @@ Copy those values into your `.env` file. So at the end, your `.env` file should 
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
-CTP_SCOPE=
+CTP_SCOPES=
 CTP_REGION=europe-west1.gcp
 ```
 

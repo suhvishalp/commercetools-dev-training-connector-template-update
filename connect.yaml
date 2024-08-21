@@ -21,7 +21,7 @@ deployAs:
         - key: CTP_CLIENT_SECRET
           description: commercetools Composable Commerce client secret
           required: true
-        - key: CTP_SCOPE
+        - key: CTP_SCOPES
           description: commercetools Composable Commerce client scope
           required: true
   - name: email-verification-sender-app
@@ -46,7 +46,7 @@ deployAs:
         - key: CTP_CLIENT_SECRET
           description: commercetools Composable Commerce client secret
           required: true
-        - key: CTP_SCOPE
+        - key: CTP_SCOPES
           description: commercetools Composable Commerce client scope
           required: true
   - name: email-verification-receiver-app
@@ -71,6 +71,6 @@ deployAs:
         - key: CTP_CLIENT_SECRET
           description: commercetools Composable Commerce client secret
           required: true
-        - key: CTP_SCOPE
+        - key: CTP_SCOPES
           description: commercetools Composable Commerce client scope
           required: true
