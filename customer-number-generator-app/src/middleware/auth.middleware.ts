@@ -1,4 +1,3 @@
-import { readConfiguration } from './../../../email-verification-sender-app/src/utils/config.utils';
 import { type AuthMiddlewareOptions } from '@commercetools/sdk-client-v2'; // Required for auth
 
 import { readConfiguration } from '../utils/config.utils';

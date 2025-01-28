@@ -30,35 +30,15 @@ This connector includes three applications: `customer-number-generator-app`, `em
 
 ### 1. Customer Number Generator App
 
-The following environment variables are required for configuration:
-
-```plaintext
-CTP_REGION
-CTP_PROJECT_KEY
-CTP_CLIENT_ID
-CTP_CLIENT_SECRET
-CTP_SCOPES
-```
+No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
 
 ### 2. Email Verification Sender App
 
-```plaintext
-CTP_REGION
-CTP_PROJECT_KEY
-CTP_CLIENT_ID
-CTP_CLIENT_SECRET
-CTP_SCOPES
-```
+No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
 
 ### 3. Email Verification Receiver App
 
-```plaintext
-CTP_REGION
-CTP_PROJECT_KEY
-CTP_CLIENT_ID
-CTP_CLIENT_SECRET
-CTP_SCOPES
-```
+No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
 
 ## Getting Started
 
@@ -111,7 +91,8 @@ CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
 CTP_SCOPES=
-CTP_REGION=europe-west1.gcp
+CTP_AUTH_URL=
+CTP_API_URL=
 ```
 
 5. Run the application
@@ -161,7 +142,8 @@ CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
 CTP_SCOPES=
-CTP_REGION=europe-west1.gcp
+CTP_AUTH_URL=
+CTP_API_URL=
 ```
 
 4. Run the application
@@ -212,7 +194,8 @@ CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
 CTP_SCOPES=
-CTP_REGION=europe-west1.gcp
+CTP_AUTH_URL=
+CTP_API_URL=
 ```
 
 4. Run the application
