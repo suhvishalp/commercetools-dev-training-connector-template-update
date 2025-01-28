@@ -2,7 +2,7 @@ import {
   optional,
   standardString,
   standardKey,
-  region,
+  standardUrl,
 } from './helpers.validators';
 
 /**
@@ -45,11 +45,18 @@ const envValidators = [
     { min: 2, max: undefined }
   ),
 
-  region(['region'], {
-    code: 'InvalidRegion',
-    message: 'Not a valid region.',
+  standardUrl(['apiUrl'], {
+    code: 'InvalidUrl',
+    message: 'API URL should be a valid url.',
     referencedBy: 'environmentVariables',
   }),
+
+  standardUrl(['authUrl'], {
+    code: 'InvalidUrl',
+    message: 'Auth URL should be a valid url.',
+    referencedBy: 'environmentVariables',
+  }),
+  
 ];
 
 export default envValidators;

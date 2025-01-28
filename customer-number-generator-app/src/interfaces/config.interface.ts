@@ -3,6 +3,7 @@ export interface Config {
   clientSecret: string;
   projectKey: string;
   scope: string;
-  region: string;
   port: string;
+  authUrl: string;
+  apiUrl: string;
 }

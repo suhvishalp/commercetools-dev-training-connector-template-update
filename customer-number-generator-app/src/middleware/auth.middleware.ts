@@ -1,3 +1,4 @@
+import { readConfiguration } from './../../../email-verification-sender-app/src/utils/config.utils';
 import { type AuthMiddlewareOptions } from '@commercetools/sdk-client-v2'; // Required for auth
 
 import { readConfiguration } from '../utils/config.utils';
@@ -5,7 +6,7 @@ import { readConfiguration } from '../utils/config.utils';
  * Configure Middleware. Example only. Adapt on your own
  */
 export const authMiddlewareOptions: AuthMiddlewareOptions = {
-  host: `https://auth.${readConfiguration().region}.commercetools.com`,
+  host: readConfiguration().authUrl,
   projectKey: readConfiguration().projectKey,
   credentials: {
     clientId: readConfiguration().clientId,
