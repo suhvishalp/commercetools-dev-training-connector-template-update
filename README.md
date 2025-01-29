@@ -56,6 +56,18 @@ CTP_TEST
 
 Make sure you have the copy of the source code on your local machine. Use GitHub to fork the project to your account. While creating the fork, ensure the repo is public. Otherwise you need to allow the `connect-mu` to access your repo. Then clone the repo onto your machine. There should be a folder created on your machine now. Go into that folder, it should contain 3 application folders.
 
+### Postman Collection API Client
+
+Make sure the API client for Postman has **at least** the following scopes:
+
+- manage_customers
+- manage_products
+- manage_categories
+- view_tax_categories
+- manage_api_clients
+- manage_connectors
+- manage_connectors_deployments
+
 ### Developing the first application: customer-number-generator-app
 
 1. cd into `customer-number-generator-app` and install the dependencies
@@ -94,7 +106,12 @@ Before we can run this application locally we need client credentials in the `.e
 mv .env.example .env
 ```
 
-Create an API Client in Merchant Center for your Composable Commerce project under `Settings->Developer Settings` section. This can be an admin client, i.e has all the permissions.
+Create an API Client in Merchant Center for your Composable Commerce project under `Settings->Developer Settings` section. This can be an admin client, i.e has all the permissions. At least you need following in scope:
+
+- manage_customers
+- manage_extensions
+- manage_subscriptions
+- manage_key_value_documents
 
 Copy those values into your `.env` file. So at the end, your `.env` file should have the following environment variables set.
 
