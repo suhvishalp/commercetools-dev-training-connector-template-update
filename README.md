@@ -30,15 +30,27 @@ This connector includes three applications: `customer-number-generator-app`, `em
 
 ### 1. Customer Number Generator App
 
-No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
+The following environment variables are required for configuration:
+
+```plaintext
+CTP_TEST
+```
 
 ### 2. Email Verification Sender App
 
-No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
+The following environment variables are required for configuration:
+
+```plaintext
+CTP_TEST
+```
 
 ### 3. Email Verification Receiver App
 
-No configuration options needed. During deployment, ensure the client requesting the deployment has additionally manage_api_clients in scope.
+The following environment variables are required for configuration:
+
+```plaintext
+CTP_TEST
+```
 
 ## Getting Started
 
@@ -48,7 +60,7 @@ Make sure you have the copy of the source code on your local machine. Use GitHub
 
 1. cd into `customer-number-generator-app` and install the dependencies
 
-```shell
+```bash
 cd customer-number-generator-app
 yarn
 ```
@@ -70,7 +82,7 @@ updateActions.push(updateAction);
 
 3. Build the application
 
-```shell
+```bash
 yarn build
 ```
 
@@ -78,7 +90,7 @@ yarn build
 
 Before we can run this application locally we need client credentials in the `.env` file. Therefore first rename `.env.example` file to `.env`
 
-```shell
+```bash
 mv .env.example .env
 ```
 
@@ -86,7 +98,7 @@ Create an API Client in Merchant Center for your Composable Commerce project und
 
 Copy those values into your `.env` file. So at the end, your `.env` file should have the following environment variables set.
 
-```plaintext
+```bash
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
@@ -99,7 +111,7 @@ CTP_API_URL=
 
 Now, run the application
 
-```shell
+```bash
 yarn start:dev
 ```
 
@@ -115,14 +127,14 @@ Since every application is running on port 8080, we should stop this server befo
 
 1. cd into `email-verification-sender-app` and install the dependencies
 
-```shell
+```bash
 cd email-verification-sender-app
 yarn
 ```
 
 2. Build the application
 
-```shell
+```bash
 yarn build
 ```
 
@@ -130,14 +142,14 @@ yarn build
 
 Before we can run this application locally we need client credentials in the `.env` file. Therefore first rename `.env.example` file to `.env`
 
-```shell
+```bash
 mv .env.example .env
 ```
 
 You can reuse the client credentials from the previous step.
 Copy those values into your `.env` file. So at the end, your `.env` file should have the following environment variables set.
 
-```plaintext
+```bash
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
@@ -150,7 +162,7 @@ CTP_API_URL=
 
 Now, run the application
 
-```shell
+```bash
 yarn start:dev
 ```
 
@@ -167,14 +179,14 @@ Since every application is running on port 8080, we should stop this server befo
 
 1. cd into `email-verification-receiver-app` and install the dependencies
 
-```shell
+```bash
 cd email-verification-receiver-app
 yarn
 ```
 
 2. Build the application
 
-```shell
+```bash
 yarn build
 ```
 
@@ -182,14 +194,14 @@ yarn build
 
 Before we can run this application locally we need client credentials in the `.env` file. Therefore first rename `.env.example` file to `.env`
 
-```shell
+```bash
 mv .env.example .env
 ```
 
 You can reuse the client credentials from the previous step.
 Copy those values into your `.env` file. So at the end, your `.env` file should have the following environment variables set.
 
-```plaintext
+```bash
 CTP_CLIENT_ID=
 CTP_CLIENT_SECRET=
 CTP_PROJECT_KEY=
@@ -202,7 +214,7 @@ CTP_API_URL=
 
 Now, run the application
 
-```shell
+```bash
 yarn start:dev
 ```
 
