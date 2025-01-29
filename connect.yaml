@@ -10,6 +10,7 @@ deployAs:
         - key: CTP_TEST
           description: commercetools Composable Commerce API region
           required: false
+          default: anything
   - name: email-verification-sender-app
     applicationType: event
     endpoint: /send-email-verification
@@ -21,6 +22,7 @@ deployAs:
         - key: CTP_TEST
           description: commercetools Composable Commerce API region
           required: false
+          default: anything
   - name: email-verification-receiver-app
     applicationType: service
     endpoint: /verify-token
@@ -32,7 +34,11 @@ deployAs:
         - key: CTP_TEST
           description: commercetools Composable Commerce API region
           required: false
+          default: anything
 inheritAs:
   apiClient:
     scopes:
       - manage_customers
+      - manage_extensions
+      - manage_subscriptions
+      - manage_key_value_documents
